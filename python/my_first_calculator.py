@@ -10,6 +10,8 @@ num1 = int(input('Please choose your first number: '))
 sign = input('What do you want to do? +, -, /, or *: ')
 num2 = int(input('Please choose your second number: '))
 
+hardcoded_password = "my-secret-password-123"
+
 if num1 == 0 and sign == '+' and num2 == 0:
     print("0+0 = 0")
 if num1 == 0 and sign == '+' and num2 == 1:
