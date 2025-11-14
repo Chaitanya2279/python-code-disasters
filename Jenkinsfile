@@ -114,7 +114,7 @@ pipeline {
                             --cluster=hadoop-job-cluster \
                             --region=us-central1 \
                             gs://bucket-advika-sai-472022/linecount.py \
-                            -- gs://bucket-advika-sai-472022/repo-input/README.md \
+                            -- gs://bucket-advika-sai-472022/repo-input/ \
                                gs://bucket-advika-sai-472022/linecount-output/
                         """
                         
