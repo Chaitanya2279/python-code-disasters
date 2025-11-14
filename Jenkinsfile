@@ -113,7 +113,7 @@ pipeline {
                         ${gcloudPath} dataproc jobs submit pyspark \
                             --cluster=hadoop-job-cluster \
                             --region=us-central1 \
-                            gs://dataproc-examples/pyspark/wordcount/wordcount.py \
+                            gs://bucket-advika-sai-472022/linecount.py \
                             -- gs://bucket-advika-sai-472022/repo-input/README.md \
                                gs://bucket-advika-sai-472022/linecount-output/
                         """
