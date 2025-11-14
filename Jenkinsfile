@@ -28,12 +28,12 @@ pipeline {
                     withSonarQubeEnv('SonarQube') {
                         withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_LOGIN_TOKEN')]) {
                             sh """
+                                export SONAR_SCANNER_OPTS="-Xmx1024m"
                                 ${scannerHome}/bin/sonar-scanner \
                                 -Dsonar.projectKey=python-disasters \
                                 -Dsonar.sources=. \
                                 -Dsonar.host.url=http://136.111.152.77:9000 \
-                                -Dsonar.login=${SONAR_LOGIN_TOKEN} \
-                                -Dsonar.exclusions=terraform/**
+                                -Dsonar.login=${SONAR_LOGIN_TOKEN}
                             """
                             }
                     }
