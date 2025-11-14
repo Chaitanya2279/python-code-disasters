@@ -10,7 +10,7 @@ pipeline {
                 script {
                     echo "Checking out code from the python-code-disasters fork..."
                     // This command clears any old code and pulls the latest from your public fork.
-                    git url: 'https://github.com/Chaitanya2279/python-code-disasters.git', branch: 'main'
+                    git url: 'https://github.com/Chaitanya2279/python-code-disasters.git', branch: 'master'
                 }
             }
         }
